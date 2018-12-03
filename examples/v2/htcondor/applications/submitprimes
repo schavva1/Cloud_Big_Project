@@ -1,0 +1,5 @@
+Universe   = vanilla
+Executable = jsoutput
+Log        = /home/nirmalkumarb94/deploymentmanager-samples/examples/v2/htcondor/stats.log
+should_transfer_files = IF_NEEDED
+Queue 10

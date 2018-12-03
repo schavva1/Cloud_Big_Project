@@ -1,0 +1,24 @@
+#!/usr/bin/env nodejs
+
+const assert = require('assert');
+const mongo = require('mongodb').MongoClient;
+
+const {inspect} = require('util'); //for debugging
+
+'use strict';
+
+const mongoURL = "mongodb://172.17.0.2/";
+const dbName = "test";
+
+let client = mongo.connect(mongoURL, MONGO_OPTIONS);
+let db = client.db(this.dbName);
+//db.createCollection("users");
+
+const dbUsers = db.collection("users");
+dbNoise.updateOne({"_id": "T00000001"}, {sert: true});
+
+
+//Used to prevent warning messages from mongodb.
+const MONGO_OPTIONS = {
+  useNewUrlParser: true
+};

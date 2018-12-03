@@ -1,0 +1,7 @@
+FROM node:10.14.0-alpine
+COPY . /mongo_client/
+COPY ./new_test_2.js /mongo_client/new_test_2.js
+COPY ./package.json /mongo_client/package.json
+WORKDIR /mongo_client
+RUN npm install
+ENTRYPOINT ["node", "new_test_2.js"]

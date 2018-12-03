@@ -1,0 +1,4 @@
+FROM node:10.14.0-alpine
+WORKDIR /home/nirmalkumarb94/deploymentmanager-samples/examples/v2/htcondor/applications
+ADD new_test.js /new_test.js
+ENTRYPOINT ["node", "new_test.js"]
