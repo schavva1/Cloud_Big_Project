@@ -2,7 +2,7 @@ Universe = vanilla
 
 # EXECUTABLE is the program your job will run It's often useful 
 # to create a shell script to "wrap" your actual work. 
-Executable = temp.sh 
+Executable = shell_vm.sh 
 
 # ERROR and OUTPUT are the error and output channels from your job
 # that HTCondor returns from the remote host.

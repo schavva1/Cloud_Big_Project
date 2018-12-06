@@ -79,7 +79,7 @@ function pick_random(db)
 
 try
 {
-	mongo.connect("mongodb://172.17.0.2/", {useNewUrlParser : true}, function(err,db) {
+	mongo.connect("mongodb://localhost/", {useNewUrlParser : true}, function(err,db) {
 		let si = setInterval(function(){stop_flag = true; console.log("End of run"); clearInterval(si);}, time);
 		setTimeout(function(){db.close();}, time + 1000);
 		pick_random(db);
